@@ -6,13 +6,9 @@ increase = 0.05  # Ежемесячный рост цен
 # TODO Посчитайте количество  месяцев, которое можно протянуть без долгов
 count = 0   # Количество месяцов
 
-while True:
-    delta = spend - salary
+while money_capital >= (spend - salary):
 
-    if money_capital < delta:
-        break
-
-    money_capital -= delta
+    money_capital -= spend - salary
     spend += spend * increase
     count += 1
 
