@@ -1,5 +1,4 @@
 if __name__ == "__main__":
-    import doctest
     class RolledProfile:
         """Базовый класс "Прокатный профиль" """
         def __init__(self, size: str, profile: str, steel_grade: str = "С235"):
